@@ -1,0 +1,186 @@
+/* Base Design */
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  font: Helvetica;
+}
+/* Header */
+body {
+  display: block;
+  background-image: url("../glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+}
+.main {
+  position: relative;
+}
+.header {
+  display: flex;
+  background-color: cadetblue;
+  margin: 1rem auto;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem 0 1rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 960px;
+  z-index: 5;
+}
+.logobrand {
+  display: flex;
+}
+.logobrand img {
+  height: 1.5rem;
+}
+h3  {
+  padding-left: 1rem
+}
+li {
+  display: inline;
+  padding-left: 2rem;
+}
+.menu {
+  padding-right: 2rem;
+}
+.singlemenu {
+  display: none;
+}
+/* main banner */
+.look {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  background-color: white;
+  color: black;
+  padding: 1.5rem 5rem;
+  margin: 10rem;
+  right: -2rem;
+  position: absolute;
+}
+.banner {
+  text-align: right;
+
+}
+/* Services */
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30rem;
+}
+.exams, .fittings, .delivery {
+  margin: 1.5rem 6rem;
+  width: 5rem;
+  height: 8rem;
+  text-align: center;
+}
+.exams img {
+  width: 3.5rem;
+}
+.fittings img, .delivery img {
+  width: 5rem;
+}
+
+/* Info Philosophy and Appointments */
+.info {
+  display: inline-flex;
+  margin: 1.5rem auto;
+  justify-content: center;
+}
+h2 {
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  background-color: cadetblue;
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+}
+.description {
+  margin-right: 5%;
+  margin-bottom: 4rem;
+  padding: 1rem 0;
+}
+.philosophy, .appointments {
+  width: 35%;
+}
+
+/* Copyright */
+.footer img {
+  padding-right: 1rem;
+  height: 1.5rem;
+}
+.footer {
+  display: flex;
+  align-content: center;
+  background-color: azure;
+  width: 960px;
+  margin: 0 auto;
+}
+.footercontainer {
+  padding: 4rem;
+}
+/* max width 1024px */
+@media only screen and (max-width: 1024px) {
+    .header {
+    width: 100%;
+    margin-top: 0;
+  }
+  .look {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+  body {
+    height: 22rem;
+    width: 100%;
+  }
+  .icons {
+    margin-top: 22rem;
+  }
+}
+/* max width 420px */
+@media only screen and (max-width: 420px) {
+  .header {
+    margin-top: 0 auto;
+  }
+  html{
+    font-size: 0.77rem;
+  }
+  body {
+    background-position: 20%;
+    height: 17rem;
+    width: 80%;
+  }
+  .menu {
+    display: none
+  }
+  .singlemenu {
+    display: inline;
+  }
+  .look {
+    margin-top: 9rem;
+    display: flex;
+    padding: 1rem auto;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .icons {
+    display: block;
+    margin: 3.77rem auto;
+    }
+  h2 {
+    display: flex;
+  }
+  .description {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+  }
+  .footer span {
+    display: none
+  }
+  .footer {
+  align-content: center;
+  }
+}
